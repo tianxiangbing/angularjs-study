@@ -8,7 +8,8 @@ angular.module('myApp', [
     'myApp.version',
     'myApp.services'
     , "myApp.directives",
-    "myApp.add"
+    "myApp.add",
+    "myApp.http"
 ]).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/list'});
