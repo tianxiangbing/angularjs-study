@@ -1541,6 +1541,7 @@ function createHttpBackendMock($rootScope, $timeout, $delegate, $browser) {
    */
   $httpBackend.flush = function(count, digest) {
     if (digest !== false) $rootScope.$digest();
+    console.log(responses)
     if (!responses.length) throw new Error('No pending request to flush !');
 
     if (angular.isDefined(count) && count !== null) {

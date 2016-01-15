@@ -1,20 +1,41 @@
 <?xml version="1.0"?>
 <testsuites>
-  <testsuite name="Chrome 44.0.2403 (Windows 10 0.0.0)" package="unit" timestamp="2016-01-14T08:10:25" id="0" hostname="tianxiangbing">
+  <testsuite name="Chrome 44.0.2403 (Windows 10 0.0.0)" package="unit" timestamp="2016-01-15T08:39:50" id="0" hostname="tianxiangbing">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36"/>
     </properties>
   </testsuite>
-  <testsuite name="Chrome 44.0.2403 (Windows 10 0.0.0)" package="unit" timestamp="2016-01-14T08:10:25" id="0" hostname="tianxiangbing" tests="6" errors="0" failures="0" time="0.078">
+  <testsuite name="Chrome 44.0.2403 (Windows 10 0.0.0)" package="unit" timestamp="2016-01-15T08:39:51" id="0" hostname="tianxiangbing" tests="7" errors="0" failures="1" time="0.057">
     <properties>
       <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36"/>
     </properties>
-    <testcase name="should replace VERSION" time="0.024" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_version module interpolate filter"/>
-    <testcase name="should print current version" time="0.025" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_version module app-version directive"/>
+    <testcase name="should replace VERSION" time="0.01" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_version module interpolate filter"/>
+    <testcase name="should print current version" time="0.013" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_version module app-version directive"/>
     <testcase name="should return current version" time="0.002" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_version module version service"/>
-    <testcase name="should ...." time="0.018" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_view module ViewController"/>
-    <testcase name="should ...." time="0.004" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_list module list controller"/>
+    <testcase name="should ...." time="0.009" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_view module ViewController"/>
+    <testcase name="should ...." time="0.008" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_list module list controller"/>
     <testcase name="count ...." time="0.005" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_list module list controller"/>
+    <testcase name="should fetch names from server on load." time="0.01" classname="unit Chrome 44.0.2403 (Windows 10 0.0.0).myApp_http module">
+      <failure type="">Error: Unexpected request: GET /app/json/http
+Expected GET http://localhost:8000/app/json/http
+    at $httpBackend (E:/360/study/angularjs/IDE/app/bower_components/angular-mocks/angular-mocks.js:1244:9)
+    at sendReq (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:10558:9)
+    at $get.serverRequest (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:10268:16)
+    at processQueue (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:14792:28)
+    at E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:14808:27
+    at Scope.$get.Scope.$eval (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:16052:28)
+    at Scope.$get.Scope.$digest (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:15870:31)
+    at Object.&lt;anonymous&gt; (E:/360/study/angularjs/IDE/app/http/http_test.js:19:15)
+</failure>
+      <failure type="">Error: [$rootScope:inprog] $digest already in progress
+http://errors.angularjs.org/1.4.8/$rootScope/inprog?p0=%24digest
+    at REGEX_STRING_REGEXP (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:68:12)
+    at beginPhase (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:16409:15)
+    at Scope.$get.Scope.$digest (E:/360/study/angularjs/IDE/app/bower_components/angular/angular.js:15850:9)
+    at Function.$httpBackend.verifyNoOutstandingExpectation (E:/360/study/angularjs/IDE/app/bower_components/angular-mocks/angular-mocks.js:1576:38)
+    at Object.&lt;anonymous&gt; (E:/360/study/angularjs/IDE/app/http/http_test.js:13:21)
+</failure>
+    </testcase>
     <system-out><![CDATA[
 ]]></system-out>
     <system-err/>

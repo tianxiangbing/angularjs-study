@@ -12,7 +12,8 @@ module.exports = function(config){
         'app/view*/**/*.js',
         'app/view/**/*.js',
         'app/scripts/**/*.js',
-        'app/directives/**/*.js',
+      'app/directives/**/*.js',
+      'app/http/**/*.js',
     ],
 
     autoWatch : true,
