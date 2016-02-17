@@ -12,6 +12,7 @@ angular.module('myApp', [
     "myApp.http",
     "myApp.RESTful",
     "myApp.REST",
+    "myApp.expander",
 ]).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/list'});

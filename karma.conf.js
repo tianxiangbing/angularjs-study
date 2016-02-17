@@ -15,6 +15,7 @@ module.exports = function (config) {
             'app/directives/**/*.js',
             'app/http/**/*.js',
             'app/RESTful/**/*.js',
+            'app/expander/**/*.js',
         ],
 
         autoWatch: true,

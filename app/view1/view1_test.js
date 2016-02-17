@@ -19,6 +19,5 @@ describe('myApp.list module', function() {
       var controller = $controller('View1Ctrl',{$scope:$scope,recipes:recipes});
       expect($scope.recipes.length).toBe(1)
     }));
-
   });
 });

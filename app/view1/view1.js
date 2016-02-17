@@ -13,7 +13,6 @@ angular.module('myApp.list', ['ngRoute', "myApp.services"])
             controller: 'View1Ctrl'
         });
     }])
-
     .controller('View1Ctrl', ['$scope', '$location', 'recipes', function ($scope, $location, recipes) {
         $scope.recipes = recipes;
     }]);

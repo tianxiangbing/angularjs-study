@@ -28,3 +28,17 @@
   content: "";
   padding: 0;
 }
+
+.expander {
+  padding: 10px 20px;
+}
+
+.expander .title {
+  background-color: #408080;
+  color: #fff;
+  cursor: pointer;
+}
+
+.expander .closed {
+  display: none;
+}
