@@ -12,5 +12,6 @@ app.controller('ExpanderController', ['$scope', function ($scope) {
         {title: "title1111", text: "content1111"},
         {title: "title2222", text: "content2222"},
         {title: "title3333", text: "content3333"}
-    ]
+    ];
+    $scope.myHTML = '<p style="color:red;">这是段落<em onmouseover="this.textContent=\'PSF\'">click here.</em>http://www.baidu.com/</p>'
 }]);

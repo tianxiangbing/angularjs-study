@@ -122,4 +122,26 @@ directives.directive("expander3", function () {
             }
         }
     }
-})
+});
+directives.directive("fileupload", function () {
+    return {
+        restrict: "A",
+        scope: {
+            done: "&",
+            progress: "&"
+        },
+        link: function (scope, element, attrs) {
+            var upload = new Upload();
+            var options = {};
+            options.target = element;
+            options.url = "json/upload.txt";
+            options.type = "json";
+            options.callback = function (result, i) {
+                scope.$apply(function () {
+                    scope.done(result, i);
+                })
+            }
+            upload.init(options)
+        }
+    }
+});
