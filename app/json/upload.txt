@@ -1,0 +1,1 @@
+{"result":"http://fanyi.baidu.com/static/i18n/zh/widget/translate/head/logo/logo_16ea8bb7.png"}
